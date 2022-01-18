@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Architect login</title>
+    <link rel="stylesheet" href="../static/Architect/styles.css">
+  </head>
+  <body>
+    <div class="bg-img">
+  <form class="container" method="POST" action="#" >
+   {% csrf_token %}
+    <h1>Architect Information</h1>
+
+  <label for="name"><b>Architect Name</b></label>
+      <input type="text" placeholder="Enter Architect name" name="name" size="50" required>
+
+      <label for="psw"><b>Short Bio</b></label>
+        <input class="bio" type="text" placeholder="Enter Bio" name="Bio"  size="50" height="30" required>
+
+        <label for="experience"><b>Experience</b></label>
+        <input type="text" placeholder="experience" name="experience" size="50">
+<a><button type="submit" class="btn" href="submit.html">Submit</button></a>
+
+      <button class="abc" type="submit" class="btn">ID proof</button>
+  </form>
+</div>
+
+  </body>
+</html>
