@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Make My Home</title>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="frontend1.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="static/DBPage1.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+        display: none
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="">
+        <div class="w3-bar w3-black w3-card" style="position: absolute">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="#home" class="w3-bar-item w3-button w3-padding-large" style="position: relative;align-self: hover;color: rgb(255, 255, 255); order: 2;display: flex;left: 7rem;top: -1px;font-size: 1rem;">Home</a>
+            <a href="#Services" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="position: relative;align-self: hover;color: rgb(255, 255, 255); order: 2;display: flex; margin-left: 5.5rem;font-size: 1rem;">Services</a>
+            <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="position: relative;align-self: hover;color: rgb(255, 255, 255); order: 2;display: flex; margin-left: -1.5rem;font-size: 1rem;">BookOnline</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="position: relative;align-self: hover;color: rgb(255, 255, 255); order: 2;display: flex; margin-left: -1.5rem;font-size: 1rem;">********</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button href="#more"class="w3-padding-large w3-button" style="position:relative;align-self: hover;color: rgb(255, 255, 255); order: 2;display: flex; left: -1rem;font-size: 1rem;" title="More">MORE <i class="fa fa-caret-down"></i></button>
+                <div class="topnav">
+                    <input type="text" placeholder="Search..">
+                  </div>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4" style="position: fixed;">
+                    <a href="profile" class="w3-bar-item w3-button">Profile</a>
+                    <a href="#Servicess" class="w3-bar-item w3-button">Features</a>
+                    <a href="#about" class="w3-bar-item w3-button">About</a>
+                    <a href="#testimonials" class="w3-bar-item w3-button">Review's</a>
+                    <a href="#policie" class="w3-bar-item w3-button">Policie's</a>
+                    <a href="#career" class="w3-bar-item w3-button">Career's</a>
+                    <a href="#blog" class="w3-bar-item w3-button">Blog</a>
+                    <a href="#Social-sites" class="w3-bar-item w3-button">Social</a>
+                    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+                </div>
+    </div>
+    <div class="navbar-container container">
+        <input type="checkbox" name="" id="">
+        <a class="Search" href="#search" target="_blank">
+        <ion-icon name="search-circle-outline"></ion-icon>
+      </a>
+        <a class="facebook" href="https://facebook.com" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a class="instagram" href="https://instagram.com" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a class="google" href="https://google.com" target="_blank">
+          <ion-icon name="logo-google"></ion-icon>
+        </a>
+        <a class="twitter" href="https://twitter.com" target="_blank">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a class="youtube" href="https://youtube.com" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+        <a class="login" href="../Login/login.html" target="_blank">
+          <ion-icon name="log-in-outline"></ion-icon>
+        </a>
+        <a class="person" href="../Login/login.html" target="_blank">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </a>
+        <a class="profile-icon" href="../Login/login.html" target="_blank">
+          <ion-icon name="person-circle-outline"></ion-icon>
+          <h1>Hello! Welcome to My Home</h1>
+        </a>
+        <a class="homelogo-icon" href="#home" target="_blank">
+          <img src="static/Images/home.png" width="35" height="35" alt="Avatar" class="avatar">
+        </a>
+        <a class="chat-icon" href="../Login/login.html" target="_blank">
+        <ion-icon name="chatbubbles-sharp"></ion-icon>
+        <p class="chat">Ask us</p>
+        </a>
+    </div>
+</nav>
+  <section class="showcase-area" id="showcase">
+    <div class="showcase-container">
+      <div class="mainpagelogo-img">
+      <img src="static/Images/homelogo.png" width = "250" height = "250" alt= "Avatar" class="avatar">
+    </div>
+      <h1 class="main-title" id="home">Make My Home</h1>
+      <p class="mainsub-title">Helping You Build Your Dream Home</p>
+      <a href="login.html" class="btnn btnn-prime"><h1>Get in Touch</h1></a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-wrapper container">
+      <div class="about-text">
+        <p class="small">About Us</p>
+        <h1>One of the biggest achievements in life is considered to be building one’s own home. Whether you are building a home on a plot or have recently purchased an apartment flat, makemyhome.com helps you with all your planning and design needs without needing a time consuming and expensive visit to an engineer or a designer.</h1>
+        <p>
+            MMH has a large collection of house plans and elevations to chose from. The collection is entirely free to browse for your next home building idea. Once you like an idea it is easy to convert it into a complete set of drawings by adding that plan to your cart at MMH. These drawings can be used to hire a contractor and start the construction process without having to hire an architect or a civil engineer. You may also engage MMH to create a totally customized house plan at a fraction of cost. You may also use MMH drawings in parallel to the drawings that your architect provides. Having a couple of options handy is a great idea before you make that dream house. After all, building a house is an event that takes place only 1 or 2 times in one’s lifetime. Plan wisely and plan with a lot of options.
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="https://i.pinimg.com/736x/b1/7b/5a/b17b5a7c3461636635e4e25a844c4a5c.jpg"
+        alt="about" />
+      </div>
+    </div>
+  </section>
+  <section id="Services">
+    <p class="large">Services</p>
+    <h2>Types of Service's</h2>
+    <div class="services-container container">
+      <div class="services-type Architects">
+        <div class="img-container">
+          <img src="http://hd.wallpaperswide.com/thumbs/architect_at_work-t2.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Architects</h3>
+            <a
+              href="../Architect/index.html"
+              class="btn btn-primary"
+              target="blank"
+              >Go there</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="services-type Contractors">
+        <div class="img-container">
+          <img src="https://s3.envato.com/files/237602652/590x332.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Contractors</h3>
+            <a
+              href="../Contractor/index.html"
+              class="btn btn-primary"
+              target="blank"
+              >Go there</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="services-type Interior_Designer">
+        <div class="img-container">
+          <img src="https://www.logodesign.net/logo/roof-incorporating-with-ornaments-5835ld.png?size=2&industry=interior-design" alt="error" />
+          <div class="img-content">
+            <h3>Interior Designer</h3>
+            <a
+              href="../Interior Designer/index.html"
+              class="btn btn-primary"
+              target="blank"
+              >Go there</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="services-type Home Design plan">
+        <div class="img-container">
+          <img src="https://www.darchitectdrawings.com/wp-content/uploads/2019/05/2-room-house-design-minimalist-home-2-bedroom-floor-plan-on-floor-minimalist-design-with-3-and-4-2-bedroom-house-designs-in-kenya.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Home Design plan</h3>
+            <a
+              href="../Home Design Plan/index.html"
+              class="btn btn-primary"
+              target="blank"
+              >Go there</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="services-type Interior_Design">
+        <div class="img-container">
+          <img src="static/Images/intdesign.jfif" alt="error" />
+          <div class="img-content">
+            <h3>Interior Design</h3>
+            <a
+              href="../Interior Design/index.html"
+              class="btn btn-primary"
+              target="blank"
+              >Go there</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="services-type Precast_material">
+        <div class="img-container">
+          <img src="static/Images/precast.jfif" alt="error" />
+          <div class="img-content">
+            <h3>Precast material</h3>
+            <a
+              href="../Precast Material/index.html"
+              class="btn btn-primary"
+              target="blank"
+              >Go there</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="services-type Construction_material">
+        <div class="img-container">
+          <img src="https://i.pinimg.com/originals/32/67/be/3267becdceb3beafd1ac856f37d67451.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Construction material</h3>
+            <a
+              href="../Construction Material/index.html"
+              class="btn btn-primary"
+              target="blank"
+              >Go there</a
+            >
+          </div>
+        </div>
+      </div>
+     <!-- var <div class="services-type Raw Material Shop’s">
+        <div class="img-container">
+          <img src="https://media.istockphoto.com/photos/shopping-cart-in-diy-shop-picture-id660306814?k=20&m=660306814&s=612x612&w=0&h=Iy4Ep8MAXWKUAMyQMZycRXifqzH0RWiHblK51xzBQxM=" alt="error" />
+          <div class="img-content">
+            <h3>Raw Material Shop’s</h3>
+            <a
+              href="https://fiscal.treasury.gov/dms/about/about-dms-programs.html"
+              class="btn btn-primary"
+              target="blank"
+              >Go there</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="services-type Bill">
+        <div class="img-container">
+          <img src="https://cdn.corporatefinanceinstitute.com/assets/invoice-template-word1.png" alt="error" />
+          <div class="img-content">
+            <h3>Bill</h3>
+            <a
+              href="https://www.smartstream-stp.com/what-is-liquidity-management/"
+              class="btn btn-primary"
+              target="blank"
+              >Go there</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>-->
+  </section>
+  <section id="Servicess"></section>
+  <section id="service-menu">
+    <h2 class="service-menu-heading">Featured Services</h2>
+    <div class="service-menu-container container">
+      <div class="service-menu-item">
+        <div class="food-img">
+          <img src="https://5.imimg.com/data5/YW/PC/PH/SELLER-91946141/office-interior-design-services-500x500.jpg" alt="" />
+        </div>
+        <div class="service-description">
+          <h2 class="service-titile">Home Design Package</h2>
+          <p>
+            We delightedly offer our clients with various customizable Interior Designing packages to meet and fulfilling the designing requirements that is affordable at your budget. We are absolutely committed with our designing packages and its price which makes our clients to select the styles meeting user satisfaction that apt their living space.
+          </p>
+          <p class="service-price">Price: &#8377; 445,000/-</p>
+        </div>
+      </div>
+
+      <div class="service-menu-item">
+        <div class="service-img">
+          <img
+            src="https://cdna.artstation.com/p/assets/covers/images/001/336/716/large/yantram-studio-2c.jpg?1444620353"
+            alt="error"
+          />
+        </div>
+        <div class="service-description">
+          <h2 class="service-titile">Floor Plan</h2>
+          <p>
+            Floor plans are useful to help design furniture layout, wiring systems, and much more. They're also a valuable tool for real estate agents and leasing companies in helping sell or rent out a space.
+          </p>
+          <p class="service-price">Price: &#8377; 40,000/-</p>
+        </div>
+      </div>
+      <div class="service-menu-item">
+        <div class="service-img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-ZkwWRvOCcYqTqIZxvIu67wY7Ins6NDnRA&usqp=CAU" alt="" />
+        </div>
+        <div class="service-description">
+          <h2 class="service-titile">Exterior Elevation</h2>
+          <p>
+            House elevations are architectural drawings that show how a home will look from specific angles. Elevations are a key part of the way architects communicate their designs with clients and the contractors who will build the home.
+          </p>
+          <p class="service-price">Price: &#8377;500/- per sq. feet</p>
+        </div>
+      </div>
+      <div class="service-menu-item">
+        <div class="service-img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS_3M-SvFKNz2mUBpvD3fTFTGDNGuSHtbOug&usqp=CAU" alt="" />
+        </div>
+        <div class="service-description">
+          <h2 class="service-titile">Customize Designs</h2>
+          <p>
+            every floor plan can be customized. You can increase room size, add a wall, add or relocate a garage - even change the very footprint of a plan to suit your personality, needs, and lifestyle. We've made customizing your home easy with our interactive floor plan tool. Instantly transform some of our most popular homes with pre-designed floor plan changes. Make the changes you want and save them to share with one of our design consultants.
+          </p>
+          <p class="service-price">Price: &#8377;75,000/-</p>
+        </div>
+      </div>
+      <div class="service-menu-item">
+        <div class="service-img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTDUFSKqueNjJh7zuK14SPGSNbVNw_eB5AsA&usqp=CAU" alt="" />
+        </div>
+        <div class="service-description">
+          <h2 class="service-titile">Interior Designs</h2>
+          <p>
+            Interior design is a long process that involves multiple visits and iterations. But not everyone provides you with ample choices. Here are some interior design prices you might have to encounter.
+          </p>
+          <p class="service-price">Price: &#8377; 50/- per sq. feet</p>
+        </div>
+      </div>
+      <div class="service-menu-item">
+        <div class="service-img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxDhLW1ySY9yT4zFyn2bwNdqnC8fyBE1472Q&usqp=CAU" alt="" />
+        </div>
+        <div class="service-description">
+          <h2 class="service-titile">3D Floor Plan</h2>
+          <p>
+            With 3D floor plans, you can show your clients every detail — traffic flow, doors, windows, floor coverings, wall colors, furniture, decor, and more.
+3D floor plan top views help clients see how each room connects with others and how much floor space they’ll have once their furniture is in place.
+          </p>
+          <p class="service-price">Price: &#8377; 80,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials">
+    <h2 class="testimonial-title">What Our Customers Say</h2>
+    <div class="testimonial-container container">
+      <div class="testimonial-box">
+        <div class="customer-detail">
+          <div class="customer-photo">
+            <img src="https://i.postimg.cc/5Nrw360Y/male-photo1.jpg" alt="" />
+            <p class="customer-name">Ross Lee</p>
+          </div>
+        </div>
+        <div class="star-rating">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <p class="testimonial-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+          voluptas cupiditate aspernatur odit doloribus non.
+        </p>
+       
+      </div>
+      <div class="testimonial-box">
+        <div class="customer-detail">
+          <div class="customer-photo">
+            <img
+              src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg"
+              alt=""
+            />
+            <p class="customer-name">Amelia Watson</p>
+          </div>
+        </div>
+        <div class="star-rating">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <p class="testimonial-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+          voluptas cupiditate aspernatur odit doloribus non.
+        </p>
+       
+      </div>
+      <div class="testimonial-box">
+        <div class="customer-detail">
+          <div class="customer-photo">
+            <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
+            <p class="customer-name">Ben Roy</p>
+          </div>
+        </div>
+        <div class="star-rating">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <p class="testimonial-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+          voluptas cupiditate aspernatur odit doloribus non.
+        </p>
+       
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="contact-container container">
+      <div class="contact-img">
+        <img src="static/Images/contact.jfif" alt="" />
+      </div>
+
+      <div class="form-container">
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="E-Mail" />
+        <textarea
+          cols="30"
+          rows="6"
+          placeholder="Type Your Message"
+        ></textarea>
+        <a href="#" class="btn btn-primary">Submit</a>
+      </div>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+  <footer id="Social-sites">
+    <a class="Socialicon" href="https://facebook.com" target="_blank">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+    <a class="Socialicon" href="https://instagram.com" target="_blank">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+    <a class="Socialicon" href="https://google.com" target="_blank">
+      <ion-icon name="logo-google"></ion-icon>
+    </a>
+    <a class="Socialicon" href="https://twitter.com" target="_blank">
+      <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+    <a class="Socialicon" href="https://youtube.com" target="_blank">
+      <ion-icon name="logo-youtube"></ion-icon>
+    </a>
+    <a class="Socialicon" href="login.html" target="_blank">
+      <ion-icon name="log-in-outline"></ion-icon>
+    </a>
+    <a class="Socialicon" href="login.html" target="_blank">
+      <ion-icon name="person-circle-outline"></ion-icon>
+    </a>
+    <h2>Social site's</h2>
+  </footer>
+  <footer id="footer">
+    <h2>LOGISTIC & ACCOUNTING MANAGING SITE &copy; all rights reserved</h2>
+  </footer>
+</body>
+<!-- 
+  .................../ JS Code for smooth scrolling /...................... -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on("click", function (event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          800,
+          function () {
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          }
+        );
+      } // End if
+    });
+  });
+</script>
+</html>
